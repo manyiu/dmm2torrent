@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         dmm2torrent
 // @namespace    https://vazue.com/
-// @version      1.0.0
+// @version      1.0.1
 // @description
 // @author       Man Yiu
 // @match        http://www.dmm.co.jp/digital/videoa/-/detail/=/cid=*
@@ -15,7 +15,7 @@
     const errorReturn = {
       matched: false
     };
-    const cidRegex = /(?:cid=\d{0,})([a-z]{3,}\d{3,})/i;
+    const cidRegex = /(?:cid=.{0,}?)([a-z]{3,}\d{3,})/i;
 
     if (cidRegex.test(url) === false) {
       return errorReturn;
