@@ -4,7 +4,7 @@
 // @version      1.0.1
 // @description
 // @author       Man Yiu
-// @match        http://www.dmm.co.jp/digital/videoa/-/detail/=/cid=*
+// @match        https://www.dmm.co.jp/digital/videoa/-/detail/=/cid=*
 // @grant        none
 // ==/UserScript==
 
