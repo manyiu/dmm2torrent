@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         dmm2torrent
 // @namespace    https://vazue.com/
-// @version      1.2.0
+// @version      1.2.1
 // @description
 // @author       Man Yiu
 // @match        https://www.dmm.co.jp/digital/videoa/-/detail/=/cid=*
@@ -21,7 +21,7 @@
       return errorReturn;
     }
 
-    const codeEng = /[a-z]{3,}/i.exec(cidRegex.exec(url)[1])[0];
+    const codeEng = /[a-z]{2,}/i.exec(cidRegex.exec(url)[1])[0];
     let codeNum = /\d{3,}/i.exec(cidRegex.exec(url)[1])[0];
 
     if (codeNum.length === 5 && codeNum.indexOf("00") === 0) {
