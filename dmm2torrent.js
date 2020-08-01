@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         dmm2torrent
 // @namespace    https://vazue.com/
-// @version      1.1.0
+// @version      1.2.0
 // @description
 // @author       Man Yiu
 // @match        https://www.dmm.co.jp/digital/videoa/-/detail/=/cid=*
