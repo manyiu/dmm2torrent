@@ -13,9 +13,9 @@
 
   function url2code(url) {
     const errorReturn = {
-      matched: false
+      matched: false,
     };
-    const cidRegex = /(?:cid=.{0,}?)([a-z]{3,}\d{3,})/i;
+    const cidRegex = /(?:cid=.{0,}?)([a-z]{2,}\d{3,})/i;
 
     if (cidRegex.test(url) === false) {
       return errorReturn;
@@ -32,7 +32,7 @@
 
     return {
       matched: true,
-      code
+      code,
     };
   }
 
